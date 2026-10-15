@@ -1,8 +1,13 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { Router } from '@angular/router';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 //import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
+
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
@@ -11,6 +16,8 @@ describe('AppComponent', () => {
       ]*/
     }).compileComponents();
   });
+
+
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);

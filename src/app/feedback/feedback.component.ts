@@ -32,7 +32,8 @@ export class FeedbackComponent {
     description: new FormControl('', [Validators.required, Validators.minLength(2)]),
     name: new FormControl('', [Validators.required, Validators.minLength(2), Validators.pattern('^[a-zA-Z ]*$')]),
     email: new FormControl('', [Validators.required, Validators.email]),
-    phone: new FormControl('', [Validators.required, Validators.minLength(10)]),
+    phone: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(15)]),
+
     termsAndConditions: new FormControl('')
   });
 
